@@ -43,7 +43,7 @@ export default function YanxuanHome() {
       <div className="relative">
         {/* 首页长图 */}
         <img
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Picsew_20260331072543_%E5%89%AF%E6%9C%AC-iYtHPnF1iIpTu0EVryDPc1Wt9DnBxA.jpg"
+          src="/yanxuan-home.jpg"
           alt="建行严选首页"
           className="w-full h-auto"
         />
