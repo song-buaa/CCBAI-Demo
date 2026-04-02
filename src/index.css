@@ -31,8 +31,8 @@ html, body {
   overflow: hidden;
 }
 
-/* On real phones (≤430px), go full width — no side margins */
-@media (max-width: 430px) {
+/* On any phone (≤768px), go full width — covers all Android/iOS screen sizes */
+@media (max-width: 768px) {
   .app-shell {
     max-width: 100%;
   }
