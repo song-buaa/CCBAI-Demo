@@ -103,7 +103,7 @@ export function YanxuanChat({ scenario, onClose }) {
   }
 
   return (
-    <div className="fixed inset-y-0 z-50 flex flex-col bg-gray-50 w-full" style={{ maxWidth: '390px', left: '50%', transform: 'translateX(-50%)', height: '100dvh' }}>
+    <div className="fixed inset-0 z-50 flex flex-col bg-gray-50" style={{ height: '100dvh' }}>
       {/* 头部 */}
       <div className="bg-[#0066B3] flex-shrink-0">
         <StatusBar dark />
