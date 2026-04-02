@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { MemoryRouter, Routes, Route, Navigate } from 'react-router-dom'
 import WealthHome from './pages/WealthHome'
 import FundHoldings from './pages/FundHoldings'
 import WealthOverview from './pages/WealthOverview'
@@ -9,7 +9,7 @@ import YanxuanHome from './pages/YanxuanHome'
 
 function App() {
   return (
-    <HashRouter>
+    <MemoryRouter initialEntries={['/home']}>
       <div className="app-shell">
         <Routes>
           <Route path="/" element={<Navigate to="/home" replace />} />
@@ -22,7 +22,7 @@ function App() {
           <Route path="/yanxuan" element={<YanxuanHome />} />
         </Routes>
       </div>
-    </HashRouter>
+    </MemoryRouter>
   )
 }
 
