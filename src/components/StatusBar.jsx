@@ -2,7 +2,7 @@
 export default function StatusBar({ dark = false }) {
   const textColor = dark ? 'text-white' : 'text-gray-900'
   return (
-    <div className={`flex items-center justify-between px-5 pt-3 pb-1 text-xs font-medium ${textColor}`} style={{ height: 44 }}>
+    <div className={`flex items-center justify-between px-5 py-1.5 text-xs font-medium ${textColor}`}>
       <span>18:06</span>
       <div className="flex items-center gap-1">
         <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor">
