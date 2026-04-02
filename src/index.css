@@ -31,6 +31,13 @@ html, body {
   overflow: hidden;
 }
 
+/* On real phones (≤430px), go full width — no side margins */
+@media (max-width: 430px) {
+  .app-shell {
+    max-width: 100%;
+  }
+}
+
 /* Scrollable page container */
 .page-scroll {
   height: 100vh;

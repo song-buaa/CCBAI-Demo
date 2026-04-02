@@ -11,8 +11,8 @@ export default function WealthHome() {
       {/* Status bar */}
       <StatusBar dark={false} />
 
-      {/* Top bar */}
-      <div className="flex items-center px-4 pb-2 gap-2">
+      {/* Top bar — fixed, not scrollable */}
+      <div className="flex items-center px-4 pb-2 gap-2 flex-shrink-0">
         {/* AI Assistant icon */}
         <button
           onClick={() => navigate('/chat/msg-general')}
@@ -40,6 +40,9 @@ export default function WealthHome() {
           <span className="text-[10px] text-gray-500">消息</span>
         </button>
       </div>
+
+      {/* Scrollable content area */}
+      <div className="flex-1 overflow-y-auto" style={{ WebkitOverflowScrolling: 'touch' }}>
 
       {/* Gold asset card */}
       <div className="mx-3 mb-3 rounded-2xl overflow-hidden" style={{ background: 'linear-gradient(135deg, #C8973A 0%, #E8BF6A 50%, #C8973A 100%)' }}>
@@ -119,7 +122,7 @@ export default function WealthHome() {
       </div>
 
       {/* Wealth products section */}
-      <div className="mx-3 bg-white rounded-xl overflow-hidden mb-2 flex-1">
+      <div className="mx-3 bg-white rounded-xl overflow-hidden mb-2">
         <div className="flex items-center justify-between px-4 py-3 border-b border-gray-50">
           <span className="text-sm font-medium text-gray-800">财富好品</span>
           <button className="flex items-center gap-1 text-xs text-gray-400">
@@ -153,6 +156,8 @@ export default function WealthHome() {
           ))}
         </div>
       </div>
+
+      </div>{/* end scrollable area */}
 
       {/* Bottom tab */}
       <BottomTab />
